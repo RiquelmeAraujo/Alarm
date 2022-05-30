@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="shortcut icon" href="assets/images/clockFaviCon.png" type="image/x-icon">    
+
+    <title>Mvp Alarm</title>
+
+</head>
+<body> 
+<div id="resultContent">
+
+    <h1>Selecione o horário</h1>
+    <p id="valueList"></p>
+    <h1 id="horaAcrescida"></h1>
+    <h1 id="hora"></h1>
+</div> 
+
+
+    <div class="flex-container">
+        
+        <div class="flex-check">
+            <div class="checkboxes flex"><label for="01:00:00">01:00h&nbsp</label>   <input id="01:00:00" name="01:00:00" type="checkbox" class="checkbox" value="01:60:00"></input></div>
+            <div class="checkboxes flex"><label for="03:00:00">03:00h&nbsp</label>  <input id="03:00:00" name="03:00:00" type="checkbox" class="checkbox" value="02:60:00"></input></div>
+            <div class="checkboxes flex"><label for="05:00:00">05:00h&nbsp</label>  <input id="05:00:00" name="05:00:00" type="checkbox" class="checkbox" value="04:60:00"></input></div>
+            <div class="checkboxes flex"><label for="07:00:00">07:00h&nbsp</label>  <input id="07:00:00" name="07:00:00" type="checkbox" class="checkbox" value="06:60:00"></input></div>
+            <div class="checkboxes flex"><label for="09:00:00">09:00h&nbsp</label>  <input id="09:00:00" name="09:00:00" type="checkbox" class="checkbox" value="08:60:00"></input></div>
+            <div class="checkboxes flex"><label for="11:00:00">11:00h&nbsp</label> <input id="11:00:00" name="11:00:00" type="checkbox" class="checkbox" value="10:60:00"></input></div>
+            <div class="checkboxes flex"><label for="13:00:00">13:00h&nbsp</label> <input id="13:00:00" name="13:00:00" type="checkbox" class="checkbox" value="12:60:00"></input></div>
+            <div class="checkboxes flex"> <label for="15:00:00">15:00h&nbsp</label> <input id="15:00:00" name="15:00:00" type="checkbox" class="checkbox" value="14:60:00"></input></div>
+            <div class="checkboxes flex"> <label for="17:00:00">17:00h&nbsp</label> <input id="17:00:00" name="17:00:00" type="checkbox" class="checkbox" value="16:60:00"></input></div>
+            <div class="checkboxes flex"> <label for="19:00:00">19:00h&nbsp</label> <input id="19:00:00" name="19:00:00" type="checkbox" class="checkbox" value="18:60:00"></input></div>
+            <div class="checkboxes flex"><label for="21:00:00">21:00h&nbsp</label> <input id="21:00:00" name="21:00:00" type="checkbox" class="checkbox" value="20:60:00"></input></div>
+            <div class="checkboxes flex"><label for="23:00:00">23:00h&nbsp</label> <input id="23:00:00" name="23:00:00" type="checkbox" class="checkbox" value="22:60:00"></input></div>
+        </div>
+            <div class="select">
+                <select name="horaAntes" id="minutosAntes" onchange()>
+                    <option selected disabled>Quantos minutos antes:</option>
+                        <option value="000000">0Min</option>
+                        <option value="000500">5Min</option>
+                        <option value="001000">10Min</option>
+                        <option value="001500">15Min</option>
+                </select>
+            </div>
+            <button class="btn" id="stop">Parar alarme</button>
+    </div>
+
+    <audio id="audio" src="assets/mc-poze-do-rodo.mp3"></audio>
+    
+    <script src="js/index.js"></script>
+</body>
+</html>
